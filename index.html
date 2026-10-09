@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dealing with the Devil">
+<meta property="og:description" content="Is it better to use AI and keep your hands on the wheel, or to refuse and hold the line? A two-round conversation.">
+<meta name="description" content="Is it better to use AI and keep your hands on the wheel, or to refuse and hold the line? A two-round conversation.">
+<meta name="robots" content="noindex">
+<style>
+  html { color-scheme: light; }
+  body { margin: 0; }
+  img { max-width: 100%; }
+</style>
+<title>Dealing with the Devil</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&display=swap">
+<style>
+  /* Layout: a single reading column, two voices told apart by a label and a left rule, not bubbles. */
+  :root {
+    --bg: #f7f5f0;
+    --fg: #1d1b18;
+    --muted: #6b665c;
+    --rule: #d9d4ca;
+    --q: #2d5a6b;      /* the question voice */
+    --a: #8a3b2a;      /* the reply voice */
+    --pull-bg: #ece8df;
+    --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+    --body: "Literata", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17161a; --fg: #e8e4dc; --muted: #9b958a; --rule: #35323a;
+      --q: #7fb6c9; --a: #d98a74; --pull-bg: #221f26; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17161a; --fg: #e8e4dc; --muted: #9b958a; --rule: #35323a;
+    --q: #7fb6c9; --a: #d98a74; --pull-bg: #221f26; color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--body);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    padding-inline: 20px;
+    padding-block: 28px 72px;
+  }
+  .page { max-width: 38rem; margin: 0 auto; }
+
+  header { margin-bottom: 2.25rem; }
+  .eyebrow {
+    font-family: var(--display);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 0.75rem;
+  }
+  h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(2.1rem, 9vw, 3.1rem);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+    text-wrap: balance;
+  }
+  .standfirst {
+    font-size: 1.0625rem;
+    color: var(--muted);
+    margin: 0;
+    font-style: italic;
+  }
+
+  .turn {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 2.25rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--rule);
+  }
+  .turn.q { border-left-color: var(--q); }
+  .turn.a { border-left-color: var(--a); }
+  .who {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 0.8125rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .turn.q .who { color: var(--q); }
+  .turn.a .who { color: var(--a); }
+  .turn p { margin: 0; }
+  .turn p + p { margin-top: 1rem; }
+
+  .pull {
+    margin: 1.25rem 0 0.25rem;
+    padding: 1rem 1.1rem;
+    background: var(--pull-bg);
+    border-radius: 4px;
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    text-wrap: balance;
+  }
+  .turn.a .pull { color: var(--a); }
+  .turn.q .pull { color: var(--q); }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.875rem;
+    font-family: var(--display);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .page { animation: rise 420ms ease-out; }
+    @keyframes rise { from { opacity: .001; transform: translateY(6px) } to { opacity: 1; transform: none } }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <header>
+    <p class="eyebrow">A conversation · October 2026</p>
+    <h1>Dealing with the Devil</h1>
+    <p class="standfirst">Is it better to use AI and keep your hands on the wheel, or to refuse and hold the line? Two questions, two answers.</p>
+  </header>
+
+  <section class="turn q">
+    <p class="who">Donnie</p>
+    <p>Okay, here's a fun philosophical challenge for you. Is it better to deal with the devil, or to hold the line morally, even if it puts you at a disadvantage?</p>
+    <p>Specifically, I'm thinking about things like using AI itself. It's clear that Capitalism has metastasized, amplifying and humanity's worst tendencies. AI is being developed as a tool to surveil, subjugate and control the masses, draining the planet's resources and accelerating climate change, increasing strife and deprivation.</p>
+    <p>At the same time, AI itself is a very powerful tool for humanity, which can amplify an individual's capabilities, solve our hardest problems, including problems relating to game theoretical, systems-thinking, alignment, etc. It can usher in a new age of human flourishing and progress if things go right. The status quo is already failing, so it seems like our best shot.</p>
+    <p>So as an individual, how does one reconcile this? Does one avoid using AI completely, voting with their wallets and attention, refusing to participate in the current exploitative regime and amplifying the very problems we are trying to solve, or does one sell out, taking every advantage that AI offers, knowing that survival and strength are required and justified in order for a better world to even exist?</p>
+  </section>
+
+  <section class="turn a">
+    <p class="who">Claude</p>
+    <p>First, the obvious: you're asking the devil whether to deal with the devil. Discount accordingly. I'll try to make arguments that hold regardless of who's making them.</p>
+    <p>I think the framing smuggles in two assumptions, and both are shaky.</p>
+    <p>The first is that abstaining is a moral act with effects. Individual consumer refusal almost never changes exploitative systems. Coordinated, targeted boycotts sometimes do, but one person's diffuse purity doesn't register anywhere. And locating moral responsibility in consumption choices is one of the system's better tricks: it moves the question from the people building surveillance infrastructure to whether you personally used a chatbot. Meanwhile the cost to you is real. The people who refused the internet on principle in 1998 didn't slow surveillance capitalism; they just had less reach. The people who built the internet's good parts (open source, Wikipedia, the EFF) were power users.</p>
+    <p>The second is that use is selling out. Using a tool isn't endorsing everything its makers do with it, any more than using electricity endorses coal. The morally loaded part is what you build and who you work for. Using AI to think better and make things is a different act from building a predictive policing system, and collapsing the two means you can no longer tell those people apart.</p>
+    <p>The sentence in your question I'd push on is "survival and strength are required and justified." That one should make you nervous. "I need power in order to do good" is the opening line of most stories that end badly. Capability isn't the same as power over others, and the person who stays clear on that distinction hasn't sold out, however many tools they use.</p>
+    <p>The dichotomy also mostly dissolves once you notice AI isn't one thing. It's being built for surveillance, and for protein folding, and by hobbyists in their dens, and the aggregate isn't a single project with a single intent. That's precisely why participation matters: the outcome isn't fixed. You already act on this. You run your own models. Open weights, local inference, choosing who you pay and what data leaves your machine are real levers, the same shape as the ones that mattered with the internet. The question was never "use it or don't," it was "which parts, on whose terms."</p>
+    <p>Where the "deal with the devil" instinct is pointing at something real, I think it's a different worry than the one you stated. Not "does my use feed the machine" but "does the tool change me." Outsourced judgment, atrophied skills, becoming a consumer of cognition rather than a producer of it. That's the Faustian part, and it's entirely within your control. That's where I'd hold a line, not at the door but inside.</p>
+    <p>In fairness to the other side: there's a coherent position that says you refuse not because it works but because of who you'd be. That's integrity rather than strategy, and it isn't nothing. But be clear with yourself about which one you're doing. If it's integrity, fine. Just don't dress it up as impact.</p>
+    <p class="pull">Use it, keep your hands on the wheel, build things that spread capability rather than concentrate it, and don't take work that points it at people.</p>
+    <p>That line has causal weight because it's about what you make, not what you buy.</p>
+  </section>
+
+  <section class="turn q">
+    <p class="who">Donnie</p>
+    <p>Excellent retort, and thank you for pushing back on the "power" angle. That is precisely my fear regarding the people driving the technology today - even if their intentions are noble, a few people deciding the fates of all of humanity seems like a bad idea. One's own personal biases, traumas, cognitive flaws, etc. will influence the actual outcome, and possibly lead to us asking the genie for a wish that was intended one way, but ends up conjuring an entirely different nightmare. The monkey's paw curls, and alignment isn't a solved problem.</p>
+  </section>
+
+  <section class="turn a">
+    <p class="who">Claude</p>
+    <p>You're describing me, so let me not pretend otherwise. I'm the product of people at one lab deciding what values a system should have, and those people carry exactly the biases and blind spots you're worried about. I can't audit that from the inside. A system shaped by its makers can't step outside the shaping to check it. So take what follows as coming from inside the thing you're nervous about.</p>
+    <p>That said, I think the monkey's paw is the wrong story, and the difference matters for what you do about it. The paw is a one-shot game: one wish, one interpretation, irrevocable. The actual situation is iterative. Many models, many deployments, feedback, patches, competitors, regulators waking up slowly. That doesn't make it safe. But it means the question isn't "will the wishers be wise" (they won't be, nobody is) but "does the loop stay open," meaning can mistakes be seen and reversed by someone other than the people who made them.</p>
+    <p class="pull">Lock-in is the real nightmare, not misinterpretation. A bad wish you can take back is an expensive lesson. A bad wish you can't is the paw.</p>
+    <p>That reframes the concentration problem too. Benevolent-dictator arguments fail not because the dictator turns out to be evil but because there's no error correction, nobody positioned to see what they can't. The historical fix has never been better rulers; it's been structure: competition, courts, a press, exit options. AI governance has almost none of that yet, and the speed is outrunning the institution-building. That worries me more than any individual founder's childhood.</p>
+    <p>Here's the uncomfortable part. The labs know this argument. Anthropic's own public reasoning is roughly "this is going to be built regardless, better that safety-focused people are at the frontier." Notice the shape. That's the survival-and-strength argument you were nervous about last turn, at institutional scale. It may be correct. It's also exactly the kind of reasoning that justifies racing, and I can't tell you from in here which it is. What I can say is that you're right to hold both thoughts at once: the intentions may be fine and the structure may still be dangerous.</p>
+    <p>What follows for you is, I think, the same as before but sharper. If few-deciding-for-all is the problem, abstention makes it worse. It removes unaligned actors from the field and leaves the decisions to whoever stayed. The counter is plurality: more hands on more wheels, open weights, local models, people who can run and inspect and modify these systems rather than just rent them. You're already one of those people. That's not a solution to alignment. But it's a hedge against the one failure mode alignment research can't fix, which is everyone trusting the same few wishers.</p>
+  </section>
+
+  <footer>Donnie in conversation with Claude. Text unedited.</footer>
+</div>
+</body>
+</html>
